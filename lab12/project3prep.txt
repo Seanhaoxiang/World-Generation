@@ -1,0 +1,31 @@
+Q: Can you think of an analogy between the process of tesselating hexagons and randomly generating a world using rooms and hallways? 
+What is the hexagon and what is the tesselation on the Project 3 side?
+
+A:Each room is like a hexagon, and the overall Hex would be to connect all the rooms using hallways.
+
+
+Q: If you were to start working on world generation, what kind of method would you think of writing first? 
+Think back to the lab and the process used to eventually get to tesselating hexagons.
+
+A:I would first try to tackle drawing the floors, which would consists of first having a method to generate random rooms,
+then branch out from the rooms to connect to other rooms using hallways.
+
+Q: What distinguishes a hallway from a room? How are they similar?
+
+A: A hallway is 1 dimentional and can connect to one or 2 rooms. A room can be either 1 or 2 dimentional must connect to at least 2 hallways
+
+-----
+Q: For tesselating hexagons, one of the hardest parts is figuring out where to place each hexagon/how to easily place hexagons on screen in an algorithmic way. 
+After looking at your own implementation, consider the implementation provided near the end of the lab.
+How did your implementation differ from the given one? What lessons can be learned from it?
+
+A:My implementation was similar to the one given. I had a drawVert function which takes in a repetition int and draws int number of hexagons from bottom up.
+  and I would call that function 5 times, passing in 3, 4, 5, 4, 3.
+
+
+Q: Consider an algorithm for placing rooms and hallways on your map. 
+Ideally, consider many algorithms and think about what makes some easier or harder to implement. Try and bring those ideas together into a single simple algorithm which accomplishes the task. 
+In general, algorithms with as few edge cases as possible are better algorithms.
+
+A:Random # generator that creates a random number of rooms with random width and heights around the world,
+then because a random # generator is not fully random, return to the positions of the rooms using generator and branch out from rooms.
